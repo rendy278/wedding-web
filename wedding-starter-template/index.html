@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rendy & Tzuyu Wedding App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- default skin -->
+  <script src=" js/jquery.min.js"></script>
+  <link rel="stylesheet" class="alternate-style" type="text/css" href="css/skins/pink.css">
+  <script src="/js/simplyCountdown.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="container">
+      <div class="row justify-content-between align-items navbar">
+        <div class="logo">
+          <a href="#">Ren & Tzyu</a>
+
+        </div>
+        <div class="nav">
+          <ul class="">
+            <li><a href="#home" onclick="scrollToSmoothly(document.querySelector('nav').offsetTop, 500)">Home</a></li>
+            <li><a href="#couple"
+                onclick="scrollToSmoothly(document.querySelector('#couple').offsetTop, 500)">Couple</a></li>
+            <li><a href="#story" onclick="scrollToSmoothly(document.querySelector('#story').offsetTop, 500)">Story</a>
+            </li>
+            <li><a href="#event" onclick="scrollToSmoothly(document.querySelector('#event').offsetTop, 500)">Events</a>
+            </li>
+            <li><a href="#people"
+                onclick="scrollToSmoothly(document.querySelector('#people').offsetTop, 500)">People</a></li>
+            <li><a href="#gallery"
+                onclick="scrollToSmoothly(document.querySelector('#gallery').offsetTop, 500)">Gallery</a></li>
+            <li><a href="#rsvp" onclick="scrollToSmoothly(document.querySelector('#rsvp').offsetTop, 500)">RSVP</a>
+            </li>
+          </ul>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="toogle">
+          <path fill="#ffff"
+            d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z" />
+        </svg>
+      </div>
+    </nav>
+  </header>
+  <!-- End of header -->
+  <section class="home-section" id="home">
+    <div class="slide active" style="background-image: url('img/slides/slide-1.jpeg');">
+      <div class="row align-items">
+        <div class="home-content">
+          <p>Kepada Bapak/Ibu/Saudara/i,Kepada Bapak/Ibu/Saudara/i,</p>
+          <h1>Rendy dan Tzuyu</h1>
+          <p>akan melangsungkan resepsi pernikahan dalam:</p>
+          <div class="simply-countdown"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url('img/slides/slide-2.jpeg');">
+      <div class="row align-items">
+        <div class="home-content">
+          <p>Kepada Bapak/Ibu/Saudara/i,Kepada Bapak/Ibu/Saudara/i,</p>
+          <h1>Rendy dan Tzuyu</h1>
+          <p>akan melangsungkan resepsi pernikahan dalam:</p>
+          <div class="simply-countdown"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url('img/slides/slide-3.jpeg');">
+      <div class="row align-items">
+        <div class="home-content">
+          <p>Kepada Bapak/Ibu/Saudara/i,Kepada Bapak/Ibu/Saudara/i,</p>
+          <h1>Rendy dan Tzuyu</h1>
+          <p>akan melangsungkan resepsi pernikahan dalam:</p>
+          <div class="simply-countdown"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of home-section -->
+  <section class="couple-section" id="couple">
+    <div class="container ">
+      <div class="row between ">
+        <div class="section-title">
+          <h2>Acara Pernikahan</h2>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="couple">
+          <img src="img/groom.jpg" alt="happy couple">
+          <h3>Rendy</h3>
+          <p>Putra dari bapak lorem dan Ibu ipsum</p>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Linkdein"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="couple ">
+          <i class="fas fa-heart"></i>
+          <img src="img/download (14).jpeg" alt="happy couple">
+          <h3>Chou Tzuyu</h3>
+          <p>Putri dari bapak lorem dan Ibu ipsum</p>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Linkdein"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- couple end -->
+  <section class="story-section" id="story">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Our Love Story</h2>
+        </div>
+        <div class="row">
+          <div class="story-content">
+            <div class="row">
+              <div class="story-item">
+                <i class="fas fa-heart"></i>
+                <div class="story-text">
+                  <h3>First Meet</h3>
+                  <time datetime="29 Feb 2018">29 Feb 2018</time>
+                  <p>Waktu pertama kali ku lihat dirimu hadir rasa hati ini inginkan dirimu Hati tenang mendengar suara
+                    indah menyapa geloranya hati ini tak kusangka rasa ini tak tertahan
+                    hati ini selalu untuk mu</p>
+                </div>
+                <div class="story-img">
+                  <img src="img/story/story-1.jpg" alt="couple lover">
+                </div>
+              </div>
+              <div class="story-item">
+                <i class="fas fa-heart"></i>
+                <div class="story-text">
+                  <h3>First Date</h3>
+                  <time datetime="1 Mar 2018">1 Mar 2018</time>
+                  <p>Hari hari berganti kini cintapun hadir melihatmu memandangmu bagai bidadari lentik indah matamu
+                    manis senyum bibir mu hitam pandajng rambutmu anggun terikat</p>
+                </div>
+                <div class="story-img">
+                  <img src="img/story/story-2.jpg" alt="couple lover">
+                </div>
+              </div>
+              <div class="story-item">
+                <i class="fas fa-heart"></i>
+                <div class="story-text">
+                  <h3>Proposal</h3>
+                  <time datetime="2 Mar 2018">2 Mar 2018</time>
+                  <p>Rasa ini tak tertahan hati ini selalu untukmu, terimalah proposal ini dari orang biasa tapi cintaku
+                    padamu luar biasa aku tak punya aku tak punya harta yang kupunya hanyalah hati yang setia tulus
+                    padamu</p>
+                </div>
+                <div class="story-img">
+                  <img src="img/story/story-3.jpg" alt="couple lover">
+                </div>
+              </div>
+              <div class="story-item">
+                <i class="fas fa-heart"></i>
+                <div class="story-text">
+                  <h3>Engagement</h3>
+                  <time datetime="3 Mar 2018">3 Mar 2018</time>
+                  <p>Kau dan aku tercipta oleh waktu hanya untuk saling mencintai mungkin kita di takdirkan bersama
+                    lanjut kasih jalin cinta berada dipelukan mu menyadarkan ku apa artinya kenyamanan kesempurnaan
+                    cinta</p>
+                </div>
+                <div class="story-img">
+                  <img src="img/story/story-4.jpg" alt="couple lover">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Story -->
+  <section class="event-section" id="event">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Celebrate Our Love</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="event-item">
+          <div class="event-item-inner">
+            <h3>Ceremony</h3>
+            <time datetime="3 Desember 2024">3 Desember 2020</time>
+            <time datetime="5:00 - 7:00 PM">5:00 - 7:00 PM</time>
+            <p>{ Tainan }</p>
+            <p>Republik Tiongkok, Kota Tainan, Distrik Timur</p>
+            <img src="img/icons/flower.svg" alt="event">
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-item-inner">
+            <h3>Reception</h3>
+            <time datetime="4 Desember 2024">4 Desember 2020</time>
+            <time datetime="5:00 - 7:00 PM">5:00 - 7:00 PM</time>
+            <p>{ Tainan }</p>
+            <p>Republik Tiongkok, Kota Tainan, Distrik Timur</p>
+            <img src="img/icons/flower.svg" alt="event">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- people section -->
+  <section class="people-section" id="people">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Peoples</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="people-filter">
+          <a href="javascript:void(0);" data-target="Rendy" class="filter-btn ">Rendy</a>
+          <a href="javascript:void(0);" data-target="Chou Tzuyu" class="filter-btn active">Chou Tzuyu</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="people-item" data-category="Rendy">
+          <div class="people-item-inner">
+            <img src="img/rendy/1.jpg" alt="people">
+            <h4>Simanjuntak</h4>
+            <p>Best Friends</p>
+            <div class="social-links">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Linkdein"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="people-item" data-category="Rendy">
+          <div class="people-item-inner">
+            <img src="img/rendy/2.jpg" alt="people">
+            <h4>Elmanuk</h4>
+            <p>Best Friends</p>
+            <div class="social-links">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Linkdein"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="people-item" data-category="Rendy">
+          <div class="people-item-inner">
+            <img src="img/rendy/3.jpg" alt="people">
+            <h4>Ambatron</h4>
+            <p>Best Friends</p>
+            <div class="social-links">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Linkdein"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="people-item" data-category="Rendy">
+          <div class="people-item-inner">
+            <img src="img/rendy/4.jpg" alt="people">
+            <h4>Rusdi</h4>
+            <p>Best Friends</p>
+            <div class="social-links">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Linkdein"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="people-item" data-category="Chou Tzuyu">
+          <div class="people-item-inner">
+            <img src="img/tzuyu/1.jpg" alt="people">
+            <h4>Simanjuntak</h4>
+            <p>Best Friends</p>
+            <div class="social-links">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Linkdein"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="people-item" data-category="Chou Tzuyu">
+          <div class="people-item-inner">
+            <img src="img/tzuyu/2.jpg" alt="people">
+            <h4>Elmanuk</h4>
+            <p>Best Friends</p>
+            <div class="social-links">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Linkdein"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="people-item" data-category="Chou Tzuyu">
+          <div class="people-item-inner">
+            <img src="img/tzuyu/3.jpg" alt="people">
+            <h4>Ambatron</h4>
+            <p>Best Friends</p>
+            <div class="social-links">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Linkdein"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="people-item" data-category="Chou Tzuyu">
+          <div class="people-item-inner">
+            <img src="img/tzuyu/4.jpg" alt="people">
+            <h4>Rusdi</h4>
+            <p>Best Friends</p>
+            <div class="social-links">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Linkdein"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of people section -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Our Memories</h2>
+        </div>
+        <div class="row">
+          <div class="gallery-item">
+            <div class="gallery-item-inner">
+              <img src="img/gallery/thumb/1.jpg" data-large="img/gallery/large/1.jpg" alt="couple gallery">
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-inner">
+              <img src="img/gallery/thumb/2.jpg" data-large="img/gallery/large/2.jpg" alt="couple gallery">
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-inner">
+              <img src="img/gallery/thumb/3.jpg" data-large="img/gallery/large/3.jpg" alt="couple gallery">
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-inner">
+              <img src="img/gallery/thumb/4.jpg" data-large="img/gallery/large/4.jpg" alt="couple gallery">
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-inner">
+              <img src="img/gallery/thumb/5.jpg" data-large="img/gallery/large/5.jpg" alt="couple gallery">
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-inner">
+              <img src="img/gallery/thumb/6.jpg" data-large="img/gallery/large/6.jpg" alt="couple gallery">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gallery-popup">
+    <div class="gp-container">
+      <div class="gp-close">&times;</div>
+      <div class="gp-counter">1/6</div>
+      <img src="img/gallery/large/1.jpg" alt="gallery img" class="gp-img">
+      <div class="gp-controls">
+        <div class="prev">
+          <i class="fas fa-angle-left"></i>
+        </div>
+        <div class="next">
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of gallery -->
+  <section class="rsvp-section" id="rsvp">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>You Are Invited</h2>
+          <p>Please kindly response before 3 Dec 2024</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="rsvp-form">
+          <form class="form">
+            <div class="row">
+              <div class="input-group w50">
+                <input type="text" placeholder="Name" class="input-control">
+              </div>
+              <div class="input-group w50">
+                <input type="email" placeholder="Email" class="input-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-group">
+                <input type="number" class="input-control" placeholder="No Handphone">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-group">
+                <textarea placeholder="Message" class="input-control"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn-1">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+
+    <p>&copy; <span id="currentYear"></span> | Hak Cipta Dilindungi</p>
+  </footer>
+  <script src="/js/main.js "></script>
+</body>
+
+</html>

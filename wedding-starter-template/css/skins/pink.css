@@ -1,0 +1,22 @@
+/*  pink color style    */
+.couple-section .couple h3,
+.story-section .story-item .story-text h3,
+.couple-section .couple i.fa-heart,
+.couple-section .social-links i,
+.story-section .story-item i,
+.people-section .people-item-inner .social-links a i {
+  color: #fb839e;
+}
+.couple-section .social-links i,
+.event-section .event-item-inner:before,
+.couple-section .couple img {
+  border-color: #fb839e;
+}
+.rsvp-section,
+.btn-1,
+.people-filter .filter-btn:active,
+.event-section,
+.people-section .people-item-inner .social-links a:hover i,
+.couple-section .social-links a:hover i {
+  background-color: pink;
+}
