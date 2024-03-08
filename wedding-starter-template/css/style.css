@@ -92,6 +92,7 @@ body {
 .home-section {
   min-height: 90vh;
   background-color: gray;
+  overflow: hidden;
 }
 .home-section .slide {
   background-position: center;
